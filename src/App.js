@@ -1,14 +1,13 @@
 import React from "react";
-import Navbar from "./components/navbar.js";
-import Footer from "./components/footer.js";
-import Body from "./components/body.js";
+import { Route, Routes } from "react-router-dom";
+import { AboutUs } from "./components/pages/about.js";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Body />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<AboutUs />} />
+      </Routes>
     </div>
   );
 }
